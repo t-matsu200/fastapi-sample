@@ -1,0 +1,4 @@
+venv
+.git
+tests
+db/sample_db.sqlite3

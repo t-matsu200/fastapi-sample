@@ -6,7 +6,7 @@ import multiprocessing
 n_core = multiprocessing.cpu_count()
 n_worker_pre_core = 1.0
 
-bind = os.getenv('API_BIND', '0:0:0:0:8080')
+bind = os.getenv('API_BIND', '0.0.0.0:8080')
 
 loglevel = os.getenv('LOG_LEVEL', 'info')
 

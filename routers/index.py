@@ -3,9 +3,13 @@ from fastapi import APIRouter, Depends
 
 from dependencies.request import State, base_state
 
-router = APIRouter()
 
+def index_router():
+    router = APIRouter()
+    tags = ['index']
 
-@router.get('/')
-def index(state: State = Depends(base_state)):
-    return {'state': state}
+    @router.get('/', tags=tags)
+    def index(state: State = Depends(base_state)):
+        return {'state': state}
+
+    return router

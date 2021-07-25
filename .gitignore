@@ -129,3 +129,6 @@ dmypy.json
 .pyre/
 
 .idea/
+
+db/mysql_data/
+sample_db.sqlite3
